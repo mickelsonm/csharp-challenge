@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace csharp_challenge
 {
@@ -12,9 +13,9 @@ namespace csharp_challenge
         }
 
         private static string ScrambleOne(string input){
-          string result = "";
           int rndpos;
           Random rnd = new Random();
+          StringBuilder sb = new StringBuilder();
 
           //create character set using copy of provided input string
           string charset = String.Copy(input);
@@ -23,12 +24,11 @@ namespace csharp_challenge
             //pick a random position given provided characters
             rndpos = rnd.Next(0, charset.Length);
             //append selected position's character to our result
-            result += charset[rndpos];
+            sb.Append(charset[rndpos]);
             //remove selected position so it's not repeated
             charset = charset.Remove(rndpos, 1);
           }
-
-          return result;
+          return sb.ToString();
         }
 
         private static string ScrambleTwo(string input){
@@ -46,7 +46,7 @@ namespace csharp_challenge
             chars[i] = chars[rndpos];
             chars[rndpos] = current;
           }
-          
+
           return new string(chars);
         }
 
