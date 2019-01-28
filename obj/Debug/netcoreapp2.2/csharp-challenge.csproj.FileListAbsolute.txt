@@ -1,0 +1,11 @@
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/bin/Debug/netcoreapp2.2/csharp-challenge.deps.json
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/bin/Debug/netcoreapp2.2/csharp-challenge.runtimeconfig.json
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/bin/Debug/netcoreapp2.2/csharp-challenge.runtimeconfig.dev.json
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/bin/Debug/netcoreapp2.2/csharp-challenge.dll
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/bin/Debug/netcoreapp2.2/csharp-challenge.pdb
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/obj/Debug/netcoreapp2.2/csharp-challenge.csprojAssemblyReference.cache
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/obj/Debug/netcoreapp2.2/csharp-challenge.csproj.CoreCompileInputs.cache
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/obj/Debug/netcoreapp2.2/csharp-challenge.AssemblyInfoInputs.cache
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/obj/Debug/netcoreapp2.2/csharp-challenge.AssemblyInfo.cs
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/obj/Debug/netcoreapp2.2/csharp-challenge.dll
+/Users/matt/go/src/github.com/mickelsonm/csharp-challenge/obj/Debug/netcoreapp2.2/csharp-challenge.pdb
