@@ -9,7 +9,7 @@ the System.Random type and its Next(int minValue, int maxValue)
 overload, while the third implementation isn't constrained to
 System.Random usage.
 
-# Methods Descriptions
+# Descriptions for methods
 
 ```csharp
 private static string ScrambleOne(string input)
