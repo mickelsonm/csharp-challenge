@@ -45,3 +45,15 @@ private static string ScrambleThree(string input)
 This method takes the input and divides it into pieces of random lengths.
 
 Randomly it puts the pieces back together to construct the result.
+
+# Comparison of Methods
+
+ScrambleOne - This method uses caution when handling the provided input string. It makes a copy of the input and all work is done using the copy. Performance-wise this uses more upfront memory, but if data integrity is of value this might be a good way to go.
+
+ScrambleTwo - This method swaps characters for random characters all in a single pass. This makes it the most performant. However, it comes at a cost, which is that it's highly likely that characters may seem repeated or less random. This method would be good for quickly randomizing, but the quality of the sample would be questionable.
+
+ScrambleThree - This method splits the input string up into blocks of random lengths. Then, it puts them back together randomly at the end to form the result string. This approach would be useful if the randomized data should include partial pieces of its original somewhere in the output. If you're looking for randomization more on a character by character level, then this approach is definitely not the one to use.
+
+# What method would I go with?
+
+I personally would select ScrambleOne if I needed to randomize input throughly on a character by character basis. It may not be overly optimized or performant, but it offers some value in data integrity (very important to those that have spent a lot of time working with data) and it seems to be the best randomization strategy that is being analyzed presently.
