@@ -11,6 +11,8 @@ System.Random usage.
 
 # Descriptions for methods
 
+> Note: See Program.cs
+
 ```csharp
 private static string ScrambleOne(string input)
 ```
