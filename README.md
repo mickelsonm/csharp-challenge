@@ -37,3 +37,11 @@ swapped. So, 'A' would become 'C' and 'C' would become 'A'.
 
 Once these swaps have been made within the array, then we simply construct a new
 string that serves as our result.
+
+```csharp
+private static string ScrambleThree(string input)
+```
+
+This method takes the input and divides it into pieces of random lengths.
+
+Randomly it puts the pieces back together to construct the result.

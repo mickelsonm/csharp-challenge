@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace csharp_challenge
@@ -51,8 +52,30 @@ namespace csharp_challenge
         }
 
         private static string ScrambleThree(string input){
-          string result = "";
-          return result;
+          int ranLength;
+          int inputLength = input.Length;
+          List<string> pieces = new List<string>();
+          Random rnd = new Random();
+          StringBuilder sb = new StringBuilder();
+
+          //construct pieces of random length and add to pieces list
+          while(inputLength > 0){
+            ranLength = rnd.Next(1, inputLength);
+            pieces.Add(input.Substring(0, ranLength));
+            input = input.Remove(0, ranLength);
+
+            inputLength -= ranLength;
+            if(inputLength < 0) inputLength = 0;
+          }
+
+          //randomly put the pieces back together to form our result
+          while(pieces.Count > 0){
+            ranLength = rnd.Next(0, pieces.Count);
+            sb.Append(pieces[ranLength]);
+            pieces.Remove(pieces[ranLength]);
+          }
+
+          return sb.ToString();
         }
     }
 }
